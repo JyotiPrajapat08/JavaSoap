@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://interfaces.my/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.my/">
+
+<xs:element name="deleteBakedGoods" type="tns:deleteBakedGoods"/>
+
+<xs:element name="deleteBakedGoodsResponse" type="tns:deleteBakedGoodsResponse"/>
+
+<xs:element name="deleteUser" type="tns:deleteUser"/>
+
+<xs:element name="deleteUserResponse" type="tns:deleteUserResponse"/>
+
+<xs:element name="getAllBakedGoods" type="tns:getAllBakedGoods"/>
+
+<xs:element name="getAllBakedGoodsResponse" type="tns:getAllBakedGoodsResponse"/>
+
+<xs:element name="getAllUsers" type="tns:getAllUsers"/>
+
+<xs:element name="getAllUsersResponse" type="tns:getAllUsersResponse"/>
+
+<xs:element name="getLogin" type="tns:getLogin"/>
+
+<xs:element name="getLoginResponse" type="tns:getLoginResponse"/>
+
+<xs:element name="insertBakedGoods" type="tns:insertBakedGoods"/>
+
+<xs:element name="insertBakedGoodsResponse" type="tns:insertBakedGoodsResponse"/>
+
+<xs:element name="insertUsers" type="tns:insertUsers"/>
+
+<xs:element name="insertUsersResponse" type="tns:insertUsersResponse"/>
+
+<xs:element name="updatedBakedGoods" type="tns:updatedBakedGoods"/>
+
+<xs:element name="updatedBakedGoodsResponse" type="tns:updatedBakedGoodsResponse"/>
+
+<xs:element name="updatedUser" type="tns:updatedUser"/>
+
+<xs:element name="updatedUserResponse" type="tns:updatedUserResponse"/>
+
+<xs:complexType name="updatedUser">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatedUserResponse">
+<xs:sequence>
+<xs:element name="UpdatedUser" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBakedGoods">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBakedGoodsResponse">
+<xs:sequence>
+<xs:element name="deleteBakedGoods" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertBakedGoods">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertBakedGoodsResponse">
+<xs:sequence>
+<xs:element name="insertBakedGoods" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatedBakedGoods">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatedBakedGoodsResponse">
+<xs:sequence>
+<xs:element name="UpdatedBakedGoods" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUser">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserResponse">
+<xs:sequence>
+<xs:element name="deleteUser" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllUsers">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllUsersResponse">
+<xs:sequence>
+<xs:element name="usersList" type="tns:users" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="users">
+<xs:sequence>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="userid" type="xs:int"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLogin">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLoginResponse">
+<xs:sequence>
+<xs:element name="login" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertUsers">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertUsersResponse">
+<xs:sequence>
+<xs:element name="insertUser" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllBakedGoods">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllBakedGoodsResponse">
+<xs:sequence>
+<xs:element name="BakedGoodsList" type="tns:bakedGoods" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bakedGoods">
+<xs:sequence>
+<xs:element name="bakeid" type="xs:int"/>
+<xs:element name="bakename" type="xs:string" minOccurs="0"/>
+<xs:element name="bakeprice" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

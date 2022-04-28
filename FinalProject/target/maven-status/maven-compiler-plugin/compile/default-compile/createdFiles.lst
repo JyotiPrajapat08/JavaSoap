@@ -1,0 +1,6 @@
+com\models\BakedGoods.class
+com\mycompany\finalproject\JAXRSConfiguration.class
+my\services\BakeImpl.class
+com\mycompany\finalproject\resources\JavaEE8Resource.class
+com\models\Users.class
+my\interfaces\IBake.class
